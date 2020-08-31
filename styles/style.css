@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body{
+    font-family: Roboto;
+    background: #000;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.plantilla{
+    width: 370px;
+    height: 800px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+
+                                                        /*    1- DEL TELEFONO: ;*/
+.del-telefono{
+/*    background: #f00;*/
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: px;
+}
+
+.derecha{
+    margin-right: 20px;
+}
+
+.del-telefono .hora{
+    margin-left: 20px;
+}
+
+.del-telefono .hora span{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+
+                                                        /*    2- CABECERA: ;*/
+
+.cabecera{
+    height: 50px;
+/*    background-color: blue;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    
+    
+        
+}
+.cabecera .actualizar{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+.nombre{
+    display: flex;
+    align-items: center;
+}
+
+.cabecera .nombre .texto{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cabecera .nombre .numero{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+/*    line-height: 20px;*/
+    
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+
+                                                         /*    3- PERFIL:     */
+
+
+.perfil{
+    height: 250px;
+    
+}
+.perfil .arriba{
+    height: 100px;
+    width: 100%
+    background-color: orangered;
+    display: flex;
+}
+
+.perfil .arriba .avatar {
+    width: 100px;
+    height: 100%;
+/*    background-color: #ff0;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perfil .arriba .derecha-avatar {
+    flex:1;
+/*    background-color: #0ff;*/
+}
+
+.perfil .descripcion{
+    height: 150px;
+    padding-left: 5px;
+}
+
+
+.arriba .avatar .circulo-foto{
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil .arriba .avatar .circulo-foto .foto{
+    background-color: red;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255,255,255);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.perfil .arriba .avatar .circulo-foto .foto span{
+    font-size: 15px;
+    color: white;
+    background-color: royalblue;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+                                /* 3.1- DERECHA DEL ABATAR    POST FOLLOWERS FOLLOWING Y EDITAR PERFIL */
+
+
+.derecha-avatar{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr;
+}
+
+.editar-perfil{
+    grid-column:1 / 4 ;
+    grid-row: 2 / 3;
+}
+
+.post{
+    display: flex;
+}
+.post .followers .following, .numero{
+    font-weight: 1000;
+}
+
+.post, .followers, .following {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.editar-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.editar-perfil a{
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    border: 1px solid grey;
+    padding: 5px 85px;
+}
+
+                                        /*   3.2-  DESCRIPCION      */
+
+.descripcion{
+    background-color: white;
+/*        outline: 1px solid red;*/
+/*                                                  kkkk          <------------------------------------ AQUI   */
+    
+}
+.descripcion p{
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+.nombre-personal{
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+.tipo-perfil{
+    font-size: 14px;
+    color: darkgray;
+    box-sizing: border-box;
+    
+}
+
+.texto-descriptivo{
+    font-size: 13px;
+    color: red;
+    margin-right: 25%;
+    box-sizing: border-box;
+    
+}
+
+.ultimo-seguidor p{
+    font-size: 10px;
+    color: darkgray;
+    box-sizing: border-box;
+
+}
+
+.ultimo-seguidor span{
+    color: black;
+    font-weight: 1000;
+}
+
+
+
+                                             /*    4- HISTORIAS   */
+
+.historias{
+    height:  120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    margin-left: 20px;
+}
+
+.imagen1{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 50%;
+    border: 1px solid rgba(33,33,33,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.imagen2{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-image: url("../img/11.jpg");
+        background-size: cover;
+        background-position: center
+    
+}
+.imagen3{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-image: url("../img/12.jpg");
+        background-size: cover;
+        background-position: center
+    
+}
+.imagen4{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-image: url("../img/14.jpg");
+        background-size: cover;
+        background-position: center
+    
+}
+.imagen5{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-image: url("../img/15.jpg");
+        background-size: cover;
+        background-position: center
+}
+
+
+.historias p{
+    font-size: 12px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+div .pnew{
+
+    font-size: 12px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+
+
+                                             /*    5- PANEL FOTOS:  */
+.panel-fotos{
+    height: 333px;
+/*    background-color:greenyellow;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 35px 1fr 1fr 1fr ;
+    align-items: center;
+    justify-items: center;
+/*    grid-gap: 1px;*/
+    box-sizing: border-box;
+    
+
+}
+
+.panel-fotos .selection1, .selection2, .selection3{
+    font-weight: 10;
+    font-size: 25px;
+/*    outline: 1px solid red;*/
+}
+.panel-fotos .imagenes-abajo1{
+    background-image: url(../img/2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+.panel-fotos .imagenes-abajo2{
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+.panel-fotos .imagenes-abajo3{
+    background-image: url(../img/4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+.panel-fotos .imagenes-abajo4{
+    background-image: url(../img/5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+.panel-fotos .imagenes-abajo5{
+    background-image: url(../img/6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+.panel-fotos .imagenes-abajo6{
+    background-image: url(../img/7.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+
+.panel-fotos .imagenes-abajo7{
+    background-image: url("../img/13.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+.panel-fotos .imagenes-abajo8{
+    background-image: url("../img/9.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+.panel-fotos .imagenes-abajo9{
+    background-image: url("../img/10.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 122px;
+    width: 122px;
+}
+
+
+
+
+                                             /*    6- FOOTER     */
+.footer{
+    height: 40px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 25px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+
+.iconos-abajo5{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: .1px solid black;
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.point{
+    color: red;
+    position: absolute;
+    margin-left: 11px;
+    margin-top: 7px;
+}
+
+.corazon{
+    background-color: orangered;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 300px;
+           
+}
+
+.match1{
+    color: white;
+    height: 40px;
+    width: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.match1 i{
+    font-weight: 900;
+    font-size: 20px;
+    display:block;
+    padding-right: 8px;
+}
+
+.number1{
+    display: block;
+        font-size: 20px;
+}
